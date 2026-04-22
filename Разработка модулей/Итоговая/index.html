@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Перемещение по горизонтали</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Итоговая практическая работа — CSS сцена</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="world">
-      <div class="wizard"></div>
-      <div class="tree"></div>
-	  <div class="animate-leaves"></div> 
-	  <div class="sun"></div> 
-    </div>
+    <main class="world" aria-label="Финальная сцена: маг, дерево, солнце и облака">
+      <div class="sun" aria-hidden="true"></div>
+
+      <div class="cloud cloud--one" aria-hidden="true"></div>
+      <div class="cloud cloud--two" aria-hidden="true"></div>
+      <div class="cloud cloud--three" aria-hidden="true"></div>
+
+      <div class="tree tree--scaled" aria-hidden="true">
+        <div class="leaves" aria-hidden="true"></div>
+        <div class="falling-leaves" aria-hidden="true">
+          <span class="leaf leaf--1"></span>
+          <span class="leaf leaf--2"></span>
+          <span class="leaf leaf--3"></span>
+          <span class="leaf leaf--4"></span>
+          <span class="leaf leaf--5"></span>
+        </div>
+      </div>
+
+      <div class="wizard wizard--combo wizard--tilt" aria-label="Маг с применёнными 2D-преобразованиями"></div>
+
+      <div class="magic-orb" aria-label="Дополнительный элемент: магическая сфера"></div>
+
+      <div class="ground" aria-hidden="true"></div>
+      <div class="soil" aria-hidden="true"></div>
+    </main>
   </body>
 </html>

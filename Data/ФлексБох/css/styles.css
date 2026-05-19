@@ -1,0 +1,45 @@
+.cat-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: stretch;
+}
+
+.rug {
+  min-height: 168px;
+  width: 180px;
+}
+
+.cat-gallery {
+  padding: 20px;
+  min-height: 500px;
+}
+
+.rudolf {
+    background-image: url(../img/cat-rudolf.png), url(../img/pt-subtle_white_feathers.png);
+}
+
+.simeon {
+    background-image: url(../img/cat-simeon.png), url(../img/pt-subtle_white_feathers.png);
+}
+
+.keks {
+    background-image: url(../img/cat-keks.png), url(../img/pt-subtle_white_feathers.png);
+}
+
+.massimo {
+    background-image: url(../img/cat-massimo.png), url(../img/pt-subtle_white_feathers.png);
+}
+
+.marty {
+    background-image: url(../img/cat-marty.png), url(../img/pt-subtle_white_feathers.png);
+}
+
+.blacky {
+    background-image: url(../img/cat-blacky.png), url(../img/pt-subtle_white_feathers.png);
+}
+.keks-big {
+    min-height: 252px;
+    min-width: 252px;
+    background-image: url(../img/cat-keks-big.png), url(../img/pt-subtle_white_feathers.png);
+}

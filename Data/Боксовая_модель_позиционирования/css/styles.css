@@ -1,0 +1,30 @@
+body {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.grid {
+  background-color: #357BA0; /* цвет фона */
+    background-image:
+        linear-gradient(0deg, transparent 19px, white 20px),   /* горизонтальные мелкие линии */
+        linear-gradient(90deg, transparent 19px, white 20px),  /* вертикальные мелкие линии */
+        linear-gradient(0deg, transparent 99px, white 100px),  /* горизонтальные крупные линии */
+        linear-gradient(90deg, transparent 99px, white 100px); /* вертикальные крупные линии */
+  background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+  background-repeat: repeat;
+}
+
+
+.block {
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+/* Стили блоков */
+.block-1 {
+
+}
+
+.block-2 {
+
+}

@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>Простая, но аккуратная таблица</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица посещений по городам</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1>Посещения по городам</h1>
-
-    Город   Посещения   Страниц     Время
-    СПб     199         18,02       00:13:45
-    Москва  69          1,48        00:00:44
-    Владимир 5          13,43       00:18:07
+    <main class="page">
+      <h1>Посещения по городам</h1>
+      <table>
+        <caption>Статистика посещений</caption>
+        <thead>
+          <tr>
+            <th scope="col">Город</th>
+            <th scope="col">Посещения</th>
+            <th scope="col">Страниц</th>
+            <th scope="col">Время</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>СПб</td>
+            <td>199</td>
+            <td>18,02</td>
+            <td>00:13:45</td>
+          </tr>
+          <tr>
+            <td>Москва</td>
+            <td>69</td>
+            <td>1,48</td>
+            <td>00:00:44</td>
+          </tr>
+          <tr>
+            <td>Владимир</td>
+            <td>5</td>
+            <td>13,43</td>
+            <td>00:18:07</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">Итого</th>
+            <th>273</th>
+            <th>32,93</th>
+            <th>00:32:36</th>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
   </body>
 </html>

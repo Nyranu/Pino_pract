@@ -1,94 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Блочная модель документа</title>
-    <style>
-      * { box-sizing: border-box; }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        padding: 24px;
-        font-family: Arial, sans-serif;
-      }
-
-      .grid {
-        background-color: #357ba0;
-        background-image:
-          linear-gradient(0deg, transparent 19px, rgba(255, 255, 255, 0.65) 20px),
-          linear-gradient(90deg, transparent 19px, rgba(255, 255, 255, 0.65) 20px),
-          linear-gradient(0deg, transparent 99px, rgba(255, 255, 255, 0.95) 100px),
-          linear-gradient(90deg, transparent 99px, rgba(255, 255, 255, 0.95) 100px);
-        background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
-      }
-
-      .layout {
-        position: relative;
-        max-width: 920px;
-        min-height: 520px;
-        margin: 0 auto;
-      }
-
-      .title {
-        margin: 0 0 20px;
-        color: #fff;
-        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-      }
-
-      .block {
-        width: 280px;
-        min-height: 140px;
-        padding: 18px;
-        margin-bottom: 24px;
-        border: 4px solid rgba(255, 255, 255, 0.95);
-        background-color: rgba(0, 255, 255, 0.3);
-        color: #09314a;
-        font-weight: 700;
-      }
-
-      .block-1 {
-        position: relative;
-        top: 0;
-        left: 0;
-      }
-
-      .block-2 {
-        position: relative;
-        left: 180px;
-        top: -22px;
-        background-color: rgba(255, 221, 117, 0.72);
-      }
-
-      .inline-demo {
-        color: #fff;
-        font-size: 18px;
-      }
-
-      .inline-demo span {
-        display: inline;
-        padding: 4px 10px;
-        border: 1px dashed #fff;
-        background: rgba(7, 30, 46, 0.25);
-      }
-    </style>
-  </head>
-  <body class="grid">
-    <main class="layout">
-      <h1 class="title">Блочная модель и позиционирование</h1>
-
-      <div class="block block-1">
-        Блок 1 (width / height / padding / border / margin)
-      </div>
-      <div class="block block-2">
-        Блок 2 (relative-позиционирование: смещён вправо и немного вверх)
-      </div>
-
-      <p class="inline-demo">
-        Строчные элементы: <span>&lt;span&gt; 1</span> <span>&lt;span&gt; 2</span>
-        <span>&lt;span&gt; 3</span>
-      </p>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блочная модель и позиционирование</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="grid">
+  <main class="layout">
+    <h1>Блочная модель и позиционирование</h1>
+    <section class="block block-1">Блок 1: width, height, padding, border, margin.</section>
+    <section class="block block-2">Блок 2: relative-позиционирование (смещение вправо и вверх).</section>
+    <p class="inline-row">Строчные элементы: <span>span 1</span><span>span 2</span><span>span 3</span></p>
+  </main>
+</body>
 </html>

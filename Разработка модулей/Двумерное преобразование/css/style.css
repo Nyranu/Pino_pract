@@ -1,59 +1,11 @@
-html, body {
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-}
-
-@media (min-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-}
-.wizard {
-  top: 244px;
-  left: 30px;
-}
-
-.wizard {
-    position: absolute;
-    z-index: 10;
-    width: 96px;
-    height: 106px;
-    background: url(../img/wizard.png) 0 0 no-repeat;
-    transform-origin: bottom center;
-}
-
-.tree {
-  top: 178px;
-  left: 400px;
-}
-
-.tree {
-    position: absolute;
-    z-index: 8;
-    width: 225px;
-    height: 252px;
-    background: url(../img/tree-large.png) 0 0 no-repeat;
-}
-
-.world {
-    min-width: 640px;
-    height: 100%;
-	border: 1PX SOLID #F0F;
-    background-image: linear-gradient(to bottom, #0793f9 0%, #95c6ff 350px, #05b548 350px, #05b548 360px, #795636 360px, #3f2d1c 100%);
-}
-
-.levitate::after {
-    position: absolute;
-    top: -20%;
-    left: -20%;
-    width: 140%;
-    height: 140%;
-    border-radius: 100%;
-    background-color: transparent;
-    box-shadow: rgba(255, 255, 255, 0.6) -4px -5px 3px -3px;
-    content: "";
-    opacity: 0.7;
-    animation: rotate 2s infinite 
-linear;
-}
+html,body{margin:0;height:100%}.world{position:relative;min-width:640px;height:100%;overflow:hidden;border:1px solid #f0f;background-image:linear-gradient(to bottom,#0793f9 0%,#95c6ff 350px,#05b548 350px,#05b548 360px,#795636 360px,#3f2d1c 100%)}
+.wizard,.tree,.leaf{position:absolute;transform-origin:bottom center}
+.wizard{z-index:10;width:96px;height:106px;background:url('../img/wizard.png') no-repeat}
+.tree{z-index:8;width:225px;height:252px;background:url('../img/tree-large.png') no-repeat}
+.move-x{top:244px;left:30px;transform:translateX(250px)}
+.levitate{top:244px;left:220px;transform:translateY(-200px) translateX(280px) translateY(200px)}
+.small-tree{top:180px;left:620px;transform:scale(.25)}
+.giant{top:220px;left:760px;transform:scale(3)}
+.rotate-air{top:270px;left:980px;transform:translateY(-200px) rotate(45deg)}
+.skewed{top:244px;left:1140px;transform:skewX(30deg)}
+.combo{top:120px;left:1320px;width:90px;height:90px;background:url('../img/field-maple-summer-leaf-clipart-md.png') center/contain no-repeat;transform:translateX(40px) translateY(20px) rotate(35deg)}

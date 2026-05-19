@@ -57,3 +57,11 @@ html, body {
     animation: rotate 2s infinite 
 linear;
 }
+.label{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.85);padding:8px 12px;border-radius:8px;margin:0;}
+.wizard-move-x{top:244px;left:30px;transform:translateX(250px);}
+.wizard.levitate{top:244px;left:210px;transform:translateY(-200px) translateX(280px) translateY(200px);}
+.tree.small-tree{top:178px;left:620px;transform:scale(.25);}
+.wizard.giant{top:220px;left:740px;transform:scale(3);}
+.wizard.rotated-flight{top:280px;left:980px;transform:translateY(-200px) rotate(45deg);}
+.wizard.skewed{top:244px;left:1160px;transform:skewX(30deg);}
+.any-element{position:absolute;top:110px;left:1260px;width:120px;height:120px;background:url(../img/field-maple-summer-leaf-clipart-md.png) center/contain no-repeat;transform:translateX(40px) rotate(35deg) scale(1.15);}

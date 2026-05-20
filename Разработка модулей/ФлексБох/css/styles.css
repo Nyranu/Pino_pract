@@ -1,20 +1,34 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+
 .cat-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 16px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .rug {
   width: 180px;
   min-height: 168px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 8px;
   background-repeat: no-repeat, repeat;
   background-position: center, center;
   background-size: contain, auto;
+}
+
+.rug span {
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
 }
 
 .keks-big {
@@ -23,26 +37,9 @@
   background-image: url(../img/cat-keks-big.png), url(../img/pt-subtle_white_feathers.png);
 }
 
-.rudolf {
-  background-image: url(../img/cat-rudolf.png), url(../img/pt-subtle_white_feathers.png);
-}
-
-.simeon {
-  background-image: url(../img/cat-simeon.png), url(../img/pt-subtle_white_feathers.png);
-}
-
-.keks {
-  background-image: url(../img/cat-keks.png), url(../img/pt-subtle_white_feathers.png);
-}
-
-.massimo {
-  background-image: url(../img/cat-massimo.png), url(../img/pt-subtle_white_feathers.png);
-}
-
-.marty {
-  background-image: url(../img/cat-marty.png), url(../img/pt-subtle_white_feathers.png);
-}
-
-.blacky {
-  background-image: url(../img/cat-blacky.png), url(../img/pt-subtle_white_feathers.png);
-}
+.rudolf { background-image: url(../img/cat-rudolf.png), url(../img/pt-subtle_white_feathers.png); }
+.simeon { background-image: url(../img/cat-simeon.png), url(../img/pt-subtle_white_feathers.png); }
+.keks { background-image: url(../img/cat-keks.png), url(../img/pt-subtle_white_feathers.png); }
+.massimo { background-image: url(../img/cat-massimo.png), url(../img/pt-subtle_white_feathers.png); }
+.marty { background-image: url(../img/cat-marty.png), url(../img/pt-subtle_white_feathers.png); }
+.blacky { background-image: url(../img/cat-blacky.png), url(../img/pt-subtle_white_feathers.png); }

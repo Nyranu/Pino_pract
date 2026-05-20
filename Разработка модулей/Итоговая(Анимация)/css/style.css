@@ -10,7 +10,7 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: "Segoe UI", Tahoma, sans-serif;
-  overflow: hidden;
+  overflow: visible;
 }
 
 body {
@@ -148,7 +148,7 @@ body {
 
 .leaves {
   position: absolute;
-  top: -52px;
+  top: 0;
   left: 26px;
   width: 178px;
   height: 140px;
@@ -227,40 +227,10 @@ body {
   height: 106px;
   background: url("../img/wizard.png") center / contain no-repeat;
   transform-origin: center bottom;
+  transform: none;
   z-index: 4;
 }
 
-.wizard--combo {
-  /*
-    Демонстрируются:
-    - translateX
-    - translateY
-    - комбинация "вверх-вперёд-вниз" через keyframes
-    - scale (увеличение)
-    - rotate(45deg)
-  */
-  --wiz-x: 50px;
-  --wiz-y: 0px;
-  --wiz-rotate: 45deg;
-  --wiz-scale: 1.22;
-  transform: translateX(var(--wiz-x)) translateY(var(--wiz-y)) rotate(var(--wiz-rotate)) scale(var(--wiz-scale));
-  animation: wizard-step 5.6s ease-in-out infinite alternate;
-}
-
-.wizard--tilt {
-  /* отдельный класс наклона по оси X */
-  filter: drop-shadow(10px 12px 9px rgba(0, 0, 0, 0.24));
-}
-
-.wizard--tilt::after {
-  content: "";
-  position: absolute;
-  inset: -4px;
-  border-radius: 12px;
-  transform: skewX(30deg);
-  border: 2px dashed rgba(255, 255, 255, 0.32);
-  opacity: 0.35;
-}
 
 /* ------------------------------
    Доп. элемент с 2+ трансформациями
@@ -322,26 +292,6 @@ body {
 
   to {
     transform: translateX(130vw);
-  }
-}
-
-@keyframes wizard-step {
-  0% {
-    --wiz-x: 0px;
-    --wiz-y: 0px;
-    transform: translateX(0) translateY(0) rotate(45deg) scale(1.22);
-  }
-
-  25% {
-    transform: translateX(10px) translateY(-56px) rotate(45deg) scale(1.22);
-  }
-
-  60% {
-    transform: translateX(62px) translateY(-52px) rotate(45deg) scale(1.22);
-  }
-
-  100% {
-    transform: translateX(88px) translateY(0) rotate(45deg) scale(1.22);
   }
 }
 

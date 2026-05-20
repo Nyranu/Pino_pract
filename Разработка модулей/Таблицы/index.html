@@ -8,45 +8,42 @@
   </head>
   <body>
     <main class="page">
-      <h1>Посещения по городам</h1>
       <table>
-        <caption>Статистика посещений</caption>
-        <thead>
-          <tr>
-            <th scope="col">Город</th>
-            <th scope="col">Посещения</th>
-            <th scope="col">Страниц</th>
-            <th scope="col">Время</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>СПб</td>
-            <td>199</td>
-            <td>18,02</td>
-            <td>00:13:45</td>
-          </tr>
-          <tr>
-            <td>Москва</td>
-            <td>69</td>
-            <td>1,48</td>
-            <td>00:00:44</td>
-          </tr>
-          <tr>
-            <td>Владимир</td>
-            <td>5</td>
-            <td>13,43</td>
-            <td>00:18:07</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th scope="row">Итого</th>
-            <th>273</th>
-            <th>32,93</th>
-            <th>00:32:36</th>
-          </tr>
-        </tfoot>
+        <caption>Статистика посещений по городам</caption>
+        <tr class="head-row">
+          <th>Город</th>
+          <th>Посещения</th>
+          <th>Просмотрено страниц</th>
+          <th>Среднее время</th>
+        </tr>
+        <tr>
+          <td>Санкт-Петербург</td>
+          <td>199</td>
+          <td>18,02</td>
+          <td>00:13:45</td>
+        </tr>
+        <tr>
+          <td>Москва</td>
+          <td>69</td>
+          <td>1,48</td>
+          <td>00:00:44</td>
+        </tr>
+        <tr>
+          <td>Владимир</td>
+          <td>5</td>
+          <td rowspan="2" class="no-data">нет данных</td>
+          <td>00:18:07</td>
+        </tr>
+        <tr>
+          <td>Тверь</td>
+          <td>7</td>
+          <td>00:11:12</td>
+        </tr>
+        <tr class="total-row">
+          <th colspan="2">Всего посещений</th>
+          <th>280</th>
+          <th>00:43:48</th>
+        </tr>
       </table>
     </main>
   </body>

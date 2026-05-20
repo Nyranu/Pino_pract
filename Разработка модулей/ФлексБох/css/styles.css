@@ -4,9 +4,9 @@
   justify-content: center;
   align-items: stretch;
   gap: 16px;
-  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .rug {
@@ -15,6 +15,12 @@
   background-repeat: no-repeat, repeat;
   background-position: center, center;
   background-size: contain, auto;
+}
+
+.keks-big {
+  width: 252px;
+  min-height: 252px;
+  background-image: url(../img/cat-keks-big.png), url(../img/pt-subtle_white_feathers.png);
 }
 
 .rudolf {

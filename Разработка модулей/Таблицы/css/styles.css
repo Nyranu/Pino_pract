@@ -1,9 +1,45 @@
 body {
-  width: 350px;
   margin: 0;
-  padding: 0 10px;
-
-  font-size: 14px;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #142033;
 }
 
+.page {
+  max-width: 760px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  margin: 0 0 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  border: 1px solid #9cb0ca;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+thead th {
+  background: #dfe9f7;
+}
+
+tfoot th,
+tfoot td {
+  background: #edf3fc;
+}
